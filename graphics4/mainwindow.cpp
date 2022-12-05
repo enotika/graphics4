@@ -82,6 +82,8 @@ void MainWindow::paintEvent(QPaintEvent *){
 
     p.drawLine(pix.width()*0.05,pix.height()/2,pix.width()*0.95,pix.height()/2);
     p.drawLine(pix.width()/2,pix.height()*0.95,pix.width()/2,pix.height()*0.05);
+    p.drawText(pix.width()/2,pix.height()*0.05, "y");
+    p.drawText(pix.width()*0.95,pix.height()/2, "x");
     for(int i = 0; i < 20;i++)
     {
        p.setPen(QPen(Qt::black,1));
